@@ -146,10 +146,10 @@ function Index() {
               style={{ backgroundColor: "#ffffff" }}
             >
               <img
-                src={heroImage}
+                src={heroAsset.url}
                 alt="A smiling woman collecting clean water from a new tap in her village"
-                width={900}
-                height={1200}
+                width={768}
+                height={1208}
                 className="h-full w-full object-cover"
               />
             </div>
