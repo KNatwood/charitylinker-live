@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
-import heroImage from "@/assets/hero-water.jpg";
+import heroAsset from "@/assets/nepal-water.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -106,24 +106,26 @@ function Index() {
       {/* Hero */}
       <main className="relative overflow-hidden bg-[#1e2a5a]">
         <div className="mx-auto grid max-w-7xl lg:grid-cols-2">
-          <div className="px-6 py-16 text-center sm:px-10 lg:py-24 lg:text-left">
+          <div className="flex flex-col px-6 py-12 text-center sm:px-10 lg:py-16">
             <h1 className="text-4xl leading-tight font-light text-white sm:text-5xl lg:text-6xl">
               Relieve suffering and give the miracle of water
             </h1>
-            <p className="mt-8 text-2xl leading-snug font-semibold text-white sm:text-3xl">
+            <p className="mt-8 text-2xl leading-snug font-bold text-white sm:text-3xl">
               Over 600 million people still lack safe and clean water.
             </p>
-            <p className="mt-6 text-2xl leading-snug font-semibold text-white sm:text-3xl">
+            <p className="mt-6 text-2xl leading-snug font-bold text-white sm:text-3xl">
               We fund and work with 55 partners across 22 countries.
             </p>
-            <a
-              href="https://www.charitywater.org/donate"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-10 inline-block rounded-lg bg-[#ffc907] px-10 py-4 text-2xl font-medium text-[#2e2532] transition-transform hover:scale-105"
-            >
-              Donate
-            </a>
+            <div className="mt-auto pt-10">
+              <a
+                href="https://www.charitywater.org/donate"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-lg bg-[#ffc907] px-10 py-4 text-2xl font-medium text-[#2e2532] transition-transform hover:scale-105"
+              >
+                Donate
+              </a>
+            </div>
             <p className="mt-6 text-sm text-white/70">
               Learn more at{" "}
               <a
@@ -144,10 +146,10 @@ function Index() {
               style={{ backgroundColor: "#ffffff" }}
             >
               <img
-                src={heroImage}
+                src={heroAsset.url}
                 alt="A smiling woman collecting clean water from a new tap in her village"
-                width={900}
-                height={1200}
+                width={768}
+                height={1208}
                 className="h-full w-full object-cover"
               />
             </div>
