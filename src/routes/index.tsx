@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
-import heroAsset from "@/assets/nepal-water.jpg.asset.json";
+import heroAsset from "@/assets/nepal-water-full.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -68,8 +68,8 @@ function Index() {
           <span className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#ffc907] text-[#2e2532]">
             <JerryCanIcon className="h-7 w-7" />
           </span>
-          <span className="font-serif text-3xl tracking-[0.2em] text-[#2e2532]">
-            charity<span className="align-middle text-xl">:</span> water
+          <span className="font-sans text-2xl font-semibold tracking-[0.08em] text-[#2e2532]">
+            charity<span className="align-middle text-lg">:</span> water
           </span>
         </a>
 
@@ -148,8 +148,8 @@ function Index() {
               <img
                 src={heroAsset.url}
                 alt="A smiling woman collecting clean water from a new tap in her village"
-                width={768}
-                height={1208}
+                width={642}
+                height={415}
                 className="h-full w-full object-cover"
               />
             </div>
