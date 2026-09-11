@@ -60,7 +60,7 @@ function Index() {
           <img
             src={logoAsset.url}
             alt="charity: water"
-            className="h-10 w-auto object-contain sm:h-12"
+            className="h-14 w-auto object-contain sm:h-16"
           />
         </a>
 
