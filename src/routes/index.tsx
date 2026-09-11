@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
 import heroAsset from "@/assets/nepal-water-full.png.asset.json";
+import logoAsset from "@/assets/charitywater-logo-trimmed.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -25,14 +26,6 @@ export const Route = createFileRoute("/")({
     links: [{ rel: "canonical", href: "/" }],
   }),
 });
-
-function JerryCanIcon({ className }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 32" className={className} aria-hidden="true" fill="currentColor">
-      <path d="M9 2h6a1 1 0 0 1 1 1v2h2a2 2 0 0 1 2 2v21a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2V3a1 1 0 0 1 1-1Zm1 3h4V4h-4v1Zm-2 4v18h8V9H8Zm2.5 3.5 3 4.6a3.1 3.1 0 1 1-5.98 1.4 3.1 3.1 0 0 1-.02-1.4l3-4.6Z" />
-    </svg>
-  );
-}
 
 function Index() {
   const [email, setEmail] = useState("");
@@ -62,15 +55,13 @@ function Index() {
           href="https://www.charitywater.org"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-3"
           aria-label="charity: water home"
         >
-          <span className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#ffc907] text-[#2e2532]">
-            <JerryCanIcon className="h-7 w-7" />
-          </span>
-          <span className="font-sans text-2xl font-semibold tracking-[0.08em] text-[#2e2532]">
-            charity<span className="align-middle text-lg">:</span> water
-          </span>
+          <img
+            src={logoAsset.url}
+            alt="charity: water"
+            className="h-14 w-auto object-contain sm:h-16"
+          />
         </a>
 
         {/* Email join bar */}
