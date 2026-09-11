@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
 import heroAsset from "@/assets/nepal-water-full.png.asset.json";
-import logoAsset from "@/assets/charitywater-logo.png.asset.json";
+import logoAsset from "@/assets/charitywater-logo-trimmed.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
